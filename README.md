@@ -1,4 +1,4 @@
-# разворачивает jupyter_datascience
+# Разворачивает jupyter_datascience
 
 ## Первый запуск
 
