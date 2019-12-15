@@ -16,3 +16,9 @@ cd jupyter_datascience &&
 git pull && 
 sudo ./startup.sh  
 ```
+
+## Соединение с контейнером
+
+```shell
+sudo docker exec -it jupyter_datascience_instance bash
+```
