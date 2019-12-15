@@ -14,7 +14,7 @@ sudo ./startup.sh
 ```shell
 cd jupyter_datascience && 
 git pull && 
-sudo ./startup.sh  
+sudo ./startup.sh -r 
 ```
 
 ## Соединение с контейнером
