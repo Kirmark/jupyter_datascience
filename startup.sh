@@ -9,7 +9,7 @@ sudo apt-get update
 sudo apt-get install unzip
 
 yes Y | sudo rm -r app
-mkdir app
+mkdir notebooks
 
 ## Докер
 
@@ -27,4 +27,4 @@ sudo docker build -t jupyter_datascience ./
 sudo docker kill jupyter_datascience_instance
 sudo docker rm jupyter_datascience_instance
 
-sudo docker run -it -p 8888:8888 --name jupyter_datascience_instance -v $(pwd)/app:/home/jovyan/server jupyter_datascience:latest
+sudo docker run -it -p 8888:8888 --name jupyter_datascience_instance -v $(pwd)/notebooks:/home/jovyan/work jupyter_datascience:latest
