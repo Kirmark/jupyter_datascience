@@ -1,8 +1,5 @@
 #!/bin/bash
 
-## разрешения для запуска связанных файлов
-chmod +x connect.sh
-
 pwd
 whoami
 
