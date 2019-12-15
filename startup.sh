@@ -10,7 +10,7 @@ sudo apt-get install unzip
 
 yes Y | sudo rm -r app
 mkdir notebooks
-chmod 777 ~/notebooks
+sudo chmod 777 ~/notebooks
 
 ## Докер
 
