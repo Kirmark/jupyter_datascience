@@ -10,7 +10,8 @@ sudo apt-get install unzip
 
 #yes Y | sudo rm -r notebooks
 mkdir notebooks
-sudo chmod 777 notebooks
+sudo chgrp 100 notebooks
+sudo chmod g+w notebooks
 
 ## Докер
 
