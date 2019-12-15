@@ -27,4 +27,4 @@ sudo docker build -t jupyter_datascience ./
 sudo docker kill jupyter_datascience_instance
 sudo docker rm jupyter_datascience_instance
 
-sudo docker run -it -p 8888:8888 --name jupyter_datascience_instance -v $(pwd):/tf/server jupyter_datascience:latest
+sudo docker run -it -p 8888:8888 --name jupyter_datascience_instance -v $(pwd)/app:/home/jovyan jupyter_datascience:latest
