@@ -1,9 +1,6 @@
 #!/bin/bash
 
-# chmod +x startup.sh - выдать разрешение на выполнение
-
-# разрешения для запуска связанных файлов
-
+## разрешения для запуска связанных файлов
 chmod +x connect.sh
 
 pwd
@@ -19,7 +16,7 @@ mkdir app
 
 ## Докер
 
-if [ "$1" == "-n" ]; then
+if [ "$1" != "-r" ]; then
   yes Y | sudo apt-get remove docker docker-engine docker.io
   yes Y | sudo apt install docker.io
 fi
