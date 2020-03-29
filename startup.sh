@@ -12,6 +12,7 @@ sudo apt-get install unzip
 mkdir notebooks
 sudo chgrp 100 notebooks
 sudo chmod g+w notebooks
+echo "vm.overcommit_memory=1" | sudo tee -a /etc/sysctl.conf
 
 ## Докер
 
