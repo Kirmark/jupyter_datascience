@@ -7,3 +7,5 @@ FROM jupyter/datascience-notebook:latest
 #RUN pip install scipy
 #RUN pip install numpy
 #RUN pip install scikit-learn
+
+RUN sysctl vm.overcommit_memory=1
